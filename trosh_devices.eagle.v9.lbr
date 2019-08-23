@@ -461,42 +461,90 @@
 <text x="-12.7" y="-55.88" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 <symbol name="MFRC522">
-<wire x1="-15.24" y1="5.08" x2="22.86" y2="5.08" width="0.254" layer="94"/>
-<wire x1="22.86" y1="5.08" x2="22.86" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="5.08" width="0.254" layer="94"/>
-<pin name="I2C" x="-17.78" y="2.54" length="short"/>
-<pin name="PVDD" x="-17.78" y="0" length="short"/>
-<pin name="DVDD" x="-17.78" y="-2.54" length="short"/>
-<pin name="DVSS" x="-17.78" y="-5.08" length="short"/>
-<pin name="NRSTPD" x="-17.78" y="-10.16" length="short"/>
-<pin name="PVSS" x="-17.78" y="-7.62" length="short"/>
-<pin name="MFIN" x="-17.78" y="-12.7" length="short"/>
-<pin name="MFOUT" x="-17.78" y="-15.24" length="short"/>
-<pin name="SVDD" x="-2.54" y="-22.86" length="short" rot="R90"/>
-<pin name="TVSS@1" x="0" y="-22.86" length="short" rot="R90"/>
-<pin name="TX1" x="2.54" y="-22.86" length="short" rot="R90"/>
-<pin name="TVDD" x="5.08" y="-22.86" length="short" rot="R90"/>
-<pin name="TX2" x="7.62" y="-22.86" length="short" rot="R90"/>
-<pin name="TVSS@2" x="10.16" y="-22.86" length="short" rot="R90"/>
-<pin name="AVDD" x="12.7" y="-22.86" length="short" rot="R90"/>
-<pin name="VMID" x="15.24" y="-22.86" length="short" rot="R90"/>
-<pin name="RX" x="25.4" y="-15.24" length="short" rot="R180"/>
-<pin name="AVSS" x="25.4" y="-12.7" length="short" rot="R180"/>
-<pin name="AUX1" x="25.4" y="-10.16" length="short" rot="R180"/>
-<pin name="AUX2" x="25.4" y="-7.62" length="short" rot="R180"/>
-<pin name="OSCIN" x="25.4" y="-5.08" length="short" rot="R180"/>
-<pin name="OSCOUT" x="25.4" y="-2.54" length="short" rot="R180"/>
-<pin name="IRQ" x="25.4" y="0" length="short" rot="R180"/>
-<pin name="SDA/NSS/RX" x="25.4" y="2.54" length="short" rot="R180"/>
-<pin name="D1/ADR_5" x="12.7" y="20.32" length="short" rot="R270"/>
-<pin name="D2/ADR_4" x="10.16" y="20.32" length="short" rot="R270"/>
-<pin name="D3/ADR_3" x="7.62" y="20.32" length="short" rot="R270"/>
-<pin name="D4/ADR_2" x="5.08" y="20.32" length="short" rot="R270"/>
-<pin name="D5_ADR_1/SCK/DTRQ" x="2.54" y="20.32" length="short" rot="R270"/>
-<pin name="D6/ADR_0/MOSI_MX" x="0" y="20.32" length="short" rot="R270"/>
-<pin name="D7/SCL/MISO/TX" x="-2.54" y="20.32" length="short" rot="R270"/>
-<pin name="EA" x="-5.08" y="20.32" length="short" rot="R270"/>
+<wire x1="0" y1="40.64" x2="48.26" y2="40.64" width="0.254" layer="94"/>
+<wire x1="48.26" y1="40.64" x2="48.26" y2="0" width="0.254" layer="94"/>
+<wire x1="48.26" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="40.64" width="0.254" layer="94"/>
+<pin name="I2C" x="-2.54" y="33.02" length="short" direction="in"/>
+<pin name="PVDD" x="-2.54" y="7.62" length="short" direction="pwr"/>
+<pin name="DVDD" x="33.02" y="-2.54" length="short" direction="pwr" rot="R90"/>
+<pin name="DVSS" x="30.48" y="-2.54" length="short" direction="pwr" rot="R90"/>
+<pin name="NRSTPD" x="17.78" y="-2.54" length="short" direction="in" rot="R90"/>
+<pin name="PVSS" x="-2.54" y="5.08" length="short" direction="pwr"/>
+<pin name="MFIN" x="50.8" y="27.94" length="short" direction="in" rot="R180"/>
+<pin name="MFOUT" x="50.8" y="25.4" length="short" direction="out" rot="R180"/>
+<pin name="SVDD" x="50.8" y="22.86" length="short" direction="pwr" rot="R180"/>
+<pin name="TVSS" x="25.4" y="43.18" length="short" direction="pwr" rot="R270"/>
+<pin name="TX1" x="22.86" y="43.18" length="short" direction="out" rot="R270"/>
+<pin name="TVDD" x="17.78" y="43.18" length="short" direction="pwr" rot="R270"/>
+<pin name="TX2" x="20.32" y="43.18" length="short" direction="out" rot="R270"/>
+<pin name="AVDD" x="25.4" y="-2.54" length="short" direction="pwr" rot="R90"/>
+<pin name="VMID" x="40.64" y="43.18" length="short" direction="pwr" rot="R270"/>
+<pin name="RX" x="30.48" y="43.18" length="short" direction="in" rot="R270"/>
+<pin name="AVSS" x="22.86" y="-2.54" length="short" direction="pwr" rot="R90"/>
+<pin name="AUX1" x="38.1" y="43.18" length="short" direction="out" rot="R270"/>
+<pin name="AUX2" x="35.56" y="43.18" length="short" direction="out" rot="R270"/>
+<pin name="OSCIN" x="50.8" y="17.78" length="short" direction="in" rot="R180"/>
+<pin name="OSCOUT" x="50.8" y="15.24" length="short" direction="out" rot="R180"/>
+<pin name="IRQ" x="15.24" y="-2.54" length="short" direction="out" rot="R90"/>
+<pin name="SDA/NSS/RX" x="-2.54" y="38.1" length="short"/>
+<pin name="D1/ADR_5" x="-2.54" y="27.94" length="short"/>
+<pin name="D2/ADR_4" x="-2.54" y="25.4" length="short"/>
+<pin name="D3/ADR_3" x="-2.54" y="22.86" length="short"/>
+<pin name="D4/ADR_2" x="-2.54" y="20.32" length="short"/>
+<pin name="D5_ADR_1/SCK/DTRQ" x="-2.54" y="17.78" length="short"/>
+<pin name="D6/ADR_0/MOSI_MX" x="-2.54" y="15.24" length="short"/>
+<pin name="D7/SCL/MISO/TX" x="-2.54" y="12.7" length="short"/>
+<pin name="EA" x="-2.54" y="35.56" length="short" direction="in"/>
+<text x="38.1" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="38.1" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DS1302">
+<wire x1="0" y1="12.7" x2="20.32" y2="12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="12.7" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
+<pin name="VCC2" x="-2.54" y="10.16" length="short" direction="pwr"/>
+<pin name="X1" x="-2.54" y="7.62" length="short" direction="in"/>
+<pin name="X2" x="-2.54" y="5.08" length="short" direction="out"/>
+<pin name="GND" x="-2.54" y="2.54" length="short" direction="pwr"/>
+<pin name="VCC1" x="22.86" y="10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="SCLK" x="22.86" y="7.62" length="short" direction="in" rot="R180"/>
+<pin name="I/O" x="22.86" y="5.08" length="short" rot="R180"/>
+<pin name="CE" x="22.86" y="2.54" length="short" direction="in" rot="R180"/>
+<text x="0" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PL2303HX">
+<wire x1="0" y1="38.1" x2="33.02" y2="38.1" width="0.254" layer="94"/>
+<wire x1="33.02" y1="38.1" x2="33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="38.1" width="0.254" layer="94"/>
+<pin name="TXD" x="-2.54" y="35.56" length="short" direction="out"/>
+<pin name="DTR_N" x="-2.54" y="33.02" length="short" direction="out"/>
+<pin name="RTS_N" x="-2.54" y="30.48" length="short" direction="out"/>
+<pin name="VDD_325" x="-2.54" y="27.94" length="short" direction="pwr"/>
+<pin name="RXD" x="-2.54" y="25.4" length="short" direction="in"/>
+<pin name="RI_N" x="-2.54" y="22.86" length="short"/>
+<pin name="GND" x="-2.54" y="20.32" length="short" direction="pwr"/>
+<pin name="NC" x="-2.54" y="17.78" length="short" direction="nc"/>
+<pin name="DSR_N" x="-2.54" y="15.24" length="short"/>
+<pin name="DCD_N" x="-2.54" y="12.7" length="short"/>
+<pin name="CTS_N" x="-2.54" y="10.16" length="short"/>
+<pin name="SHTD_N" x="-2.54" y="7.62" length="short" direction="out"/>
+<pin name="GP3" x="-2.54" y="5.08" length="short"/>
+<pin name="GP2" x="-2.54" y="2.54" length="short"/>
+<pin name="DP" x="35.56" y="2.54" length="short" rot="R180"/>
+<pin name="DM" x="35.56" y="5.08" length="short" rot="R180"/>
+<pin name="VO_33" x="35.56" y="7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="RESET_N" x="35.56" y="12.7" length="short" direction="in" rot="R180"/>
+<pin name="VDD_5" x="35.56" y="15.24" length="short" rot="R180"/>
+<pin name="GP0" x="35.56" y="20.32" length="short" rot="R180"/>
+<pin name="GP1" x="35.56" y="22.86" length="short" rot="R180"/>
+<pin name="TEST" x="35.56" y="30.48" length="short" direction="in" rot="R180"/>
+<pin name="RESERVED" x="35.56" y="35.56" length="short" rot="R180"/>
+<text x="0" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -571,6 +619,113 @@
 <connect gate="U" pin="VCC@2" pad="64"/>
 <connect gate="U" pin="XTAL1" pad="24"/>
 <connect gate="U" pin="XTAL2" pad="23"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS1302" prefix="U">
+<description>Trickle-charge timekeeping chip</description>
+<gates>
+<gate name="U" symbol="DS1302" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-8">
+<connects>
+<connect gate="U" pin="CE" pad="P5"/>
+<connect gate="U" pin="GND" pad="P4"/>
+<connect gate="U" pin="I/O" pad="P6"/>
+<connect gate="U" pin="SCLK" pad="P7"/>
+<connect gate="U" pin="VCC1" pad="P8"/>
+<connect gate="U" pin="VCC2" pad="P1"/>
+<connect gate="U" pin="X1" pad="P2"/>
+<connect gate="U" pin="X2" pad="P3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MFRC522" prefix="U">
+<description>Contactless reader/writer, standard performance MIFARE and NTAG frontend</description>
+<gates>
+<gate name="U" symbol="MFRC522" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HVQFN-32">
+<connects>
+<connect gate="U" pin="AUX1" pad="P19"/>
+<connect gate="U" pin="AUX2" pad="P20"/>
+<connect gate="U" pin="AVDD" pad="P15"/>
+<connect gate="U" pin="AVSS" pad="P18"/>
+<connect gate="U" pin="D1/ADR_5" pad="P25"/>
+<connect gate="U" pin="D2/ADR_4" pad="P26"/>
+<connect gate="U" pin="D3/ADR_3" pad="P27"/>
+<connect gate="U" pin="D4/ADR_2" pad="P28"/>
+<connect gate="U" pin="D5_ADR_1/SCK/DTRQ" pad="P29"/>
+<connect gate="U" pin="D6/ADR_0/MOSI_MX" pad="P30"/>
+<connect gate="U" pin="D7/SCL/MISO/TX" pad="P31"/>
+<connect gate="U" pin="DVDD" pad="P3"/>
+<connect gate="U" pin="DVSS" pad="P4"/>
+<connect gate="U" pin="EA" pad="P32"/>
+<connect gate="U" pin="I2C" pad="P1"/>
+<connect gate="U" pin="IRQ" pad="P23"/>
+<connect gate="U" pin="MFIN" pad="P7"/>
+<connect gate="U" pin="MFOUT" pad="P8"/>
+<connect gate="U" pin="NRSTPD" pad="P6"/>
+<connect gate="U" pin="OSCIN" pad="P21"/>
+<connect gate="U" pin="OSCOUT" pad="P22"/>
+<connect gate="U" pin="PVDD" pad="P2"/>
+<connect gate="U" pin="PVSS" pad="P5"/>
+<connect gate="U" pin="RX" pad="P17"/>
+<connect gate="U" pin="SDA/NSS/RX" pad="P24"/>
+<connect gate="U" pin="SVDD" pad="P9"/>
+<connect gate="U" pin="TVDD" pad="P12"/>
+<connect gate="U" pin="TVSS" pad="P10 P14"/>
+<connect gate="U" pin="TX1" pad="P11"/>
+<connect gate="U" pin="TX2" pad="P13"/>
+<connect gate="U" pin="VMID" pad="P16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PL2303HX" prefix="U">
+<description>USB to serial bridge controller</description>
+<gates>
+<gate name="U" symbol="PL2303HX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP-28">
+<connects>
+<connect gate="U" pin="CTS_N" pad="P11"/>
+<connect gate="U" pin="DCD_N" pad="P10"/>
+<connect gate="U" pin="DM" pad="P16"/>
+<connect gate="U" pin="DP" pad="P15"/>
+<connect gate="U" pin="DSR_N" pad="P9"/>
+<connect gate="U" pin="DTR_N" pad="P2"/>
+<connect gate="U" pin="GND" pad="P7 P18 P25"/>
+<connect gate="U" pin="GP0" pad="P22"/>
+<connect gate="U" pin="GP1" pad="P23"/>
+<connect gate="U" pin="GP2" pad="P14"/>
+<connect gate="U" pin="GP3" pad="P13"/>
+<connect gate="U" pin="NC" pad="P8 P21 P24 P27"/>
+<connect gate="U" pin="RESERVED" pad="P28"/>
+<connect gate="U" pin="RESET_N" pad="P19"/>
+<connect gate="U" pin="RI_N" pad="P6"/>
+<connect gate="U" pin="RTS_N" pad="P3"/>
+<connect gate="U" pin="RXD" pad="P5"/>
+<connect gate="U" pin="SHTD_N" pad="P12"/>
+<connect gate="U" pin="TEST" pad="P26"/>
+<connect gate="U" pin="TXD" pad="P1"/>
+<connect gate="U" pin="VDD_325" pad="P4"/>
+<connect gate="U" pin="VDD_5" pad="P20"/>
+<connect gate="U" pin="VO_33" pad="P17"/>
 </connects>
 <technologies>
 <technology name=""/>
