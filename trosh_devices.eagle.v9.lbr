@@ -500,51 +500,51 @@
 <text x="38.1" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="DS1302">
-<wire x1="0" y1="12.7" x2="20.32" y2="12.7" width="0.254" layer="94"/>
-<wire x1="20.32" y1="12.7" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
-<pin name="VCC2" x="-2.54" y="10.16" length="short" direction="pwr"/>
-<pin name="X1" x="-2.54" y="7.62" length="short" direction="in"/>
-<pin name="X2" x="-2.54" y="5.08" length="short" direction="out"/>
-<pin name="GND" x="-2.54" y="2.54" length="short" direction="pwr"/>
-<pin name="VCC1" x="22.86" y="10.16" length="short" direction="pwr" rot="R180"/>
-<pin name="SCLK" x="22.86" y="7.62" length="short" direction="in" rot="R180"/>
-<pin name="I/O" x="22.86" y="5.08" length="short" rot="R180"/>
-<pin name="CE" x="22.86" y="2.54" length="short" direction="in" rot="R180"/>
-<text x="0" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="17.78" x2="25.4" y2="17.78" width="0.254" layer="94"/>
+<wire x1="25.4" y1="17.78" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<pin name="VCC2" x="27.94" y="10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="X1" x="7.62" y="20.32" length="short" direction="in" rot="R270"/>
+<pin name="X2" x="17.78" y="20.32" length="short" direction="out" rot="R270"/>
+<pin name="GND" x="12.7" y="-2.54" length="short" direction="pwr" rot="R90"/>
+<pin name="VCC1" x="27.94" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="SCLK" x="-2.54" y="5.08" length="short" direction="in"/>
+<pin name="I/O" x="-2.54" y="7.62" length="short"/>
+<pin name="CE" x="-2.54" y="10.16" length="short" direction="in"/>
+<text x="15.24" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="15.24" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="PL2303HX">
-<wire x1="0" y1="38.1" x2="33.02" y2="38.1" width="0.254" layer="94"/>
-<wire x1="33.02" y1="38.1" x2="33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="40.64" x2="33.02" y2="40.64" width="0.254" layer="94"/>
+<wire x1="33.02" y1="40.64" x2="33.02" y2="0" width="0.254" layer="94"/>
 <wire x1="33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="38.1" width="0.254" layer="94"/>
-<pin name="TXD" x="-2.54" y="35.56" length="short" direction="out"/>
-<pin name="DTR_N" x="-2.54" y="33.02" length="short" direction="out"/>
-<pin name="RTS_N" x="-2.54" y="30.48" length="short" direction="out"/>
-<pin name="VDD_325" x="-2.54" y="27.94" length="short" direction="pwr"/>
-<pin name="RXD" x="-2.54" y="25.4" length="short" direction="in"/>
-<pin name="RI_N" x="-2.54" y="22.86" length="short"/>
-<pin name="GND" x="-2.54" y="20.32" length="short" direction="pwr"/>
-<pin name="NC" x="-2.54" y="17.78" length="short" direction="nc"/>
+<wire x1="0" y1="0" x2="0" y2="40.64" width="0.254" layer="94"/>
+<pin name="TXD" x="-2.54" y="27.94" length="short" direction="out"/>
+<pin name="DTR_N" x="-2.54" y="25.4" length="short" direction="out"/>
+<pin name="RTS_N" x="-2.54" y="22.86" length="short" direction="out"/>
+<pin name="VDD_325" x="10.16" y="43.18" length="short" direction="pwr" rot="R270"/>
+<pin name="RXD" x="-2.54" y="20.32" length="short" direction="in"/>
+<pin name="RI_N" x="-2.54" y="17.78" length="short"/>
+<pin name="GND" x="17.78" y="-2.54" length="short" direction="pwr" rot="R90"/>
+<pin name="NC" x="-2.54" y="2.54" length="short" direction="nc"/>
 <pin name="DSR_N" x="-2.54" y="15.24" length="short"/>
 <pin name="DCD_N" x="-2.54" y="12.7" length="short"/>
 <pin name="CTS_N" x="-2.54" y="10.16" length="short"/>
 <pin name="SHTD_N" x="-2.54" y="7.62" length="short" direction="out"/>
-<pin name="GP3" x="-2.54" y="5.08" length="short"/>
-<pin name="GP2" x="-2.54" y="2.54" length="short"/>
-<pin name="DP" x="35.56" y="2.54" length="short" rot="R180"/>
-<pin name="DM" x="35.56" y="5.08" length="short" rot="R180"/>
-<pin name="VO_33" x="35.56" y="7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="RESET_N" x="35.56" y="12.7" length="short" direction="in" rot="R180"/>
-<pin name="VDD_5" x="35.56" y="15.24" length="short" rot="R180"/>
+<pin name="GP3" x="35.56" y="27.94" length="short" rot="R180"/>
+<pin name="GP2" x="35.56" y="25.4" length="short" rot="R180"/>
+<pin name="DP" x="35.56" y="5.08" length="short" rot="R180"/>
+<pin name="DM" x="35.56" y="7.62" length="short" rot="R180"/>
+<pin name="VO_33" x="2.54" y="43.18" length="short" direction="pwr" rot="R270"/>
+<pin name="RESET_N" x="35.56" y="15.24" length="short" direction="in" rot="R180"/>
+<pin name="VDD_5" x="17.78" y="43.18" length="short" rot="R270"/>
 <pin name="GP0" x="35.56" y="20.32" length="short" rot="R180"/>
 <pin name="GP1" x="35.56" y="22.86" length="short" rot="R180"/>
-<pin name="TEST" x="35.56" y="30.48" length="short" direction="in" rot="R180"/>
-<pin name="RESERVED" x="35.56" y="35.56" length="short" rot="R180"/>
-<text x="0" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="TEST" x="35.56" y="33.02" length="short" direction="in" rot="R180"/>
+<pin name="RESERVED" x="35.56" y="38.1" length="short" rot="R180"/>
+<text x="22.86" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="22.86" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
