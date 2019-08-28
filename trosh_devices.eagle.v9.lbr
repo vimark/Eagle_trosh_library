@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -387,6 +387,41 @@
 <text x="0" y="-3.937" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
 </package>
 <package name="RFIO-RC522">
+<wire x1="-19.5" y1="29.75" x2="19.5" y2="29.75" width="0.3048" layer="21"/>
+<wire x1="19.5" y1="29.75" x2="19.5" y2="-29.75" width="0.3048" layer="21"/>
+<wire x1="19.5" y1="-29.75" x2="-19.5" y2="-29.75" width="0.3048" layer="21"/>
+<wire x1="-19.5" y1="-29.75" x2="-19.5" y2="29.75" width="0.3048" layer="21"/>
+<hole x="-16.75" y="14.25" drill="3"/>
+<hole x="16.75" y="14.25" drill="3"/>
+<hole x="-12.5" y="-22.25" drill="3"/>
+<hole x="12.5" y="-22.25" drill="3"/>
+<wire x1="-18.7" y1="11.45" x2="18.7" y2="11.45" width="0.8128" layer="51"/>
+<wire x1="18.7" y1="11.45" x2="18.7" y2="-28.45" width="0.8128" layer="51"/>
+<wire x1="18.7" y1="-28.45" x2="-18.7" y2="-28.45" width="0.8128" layer="51"/>
+<wire x1="-18.7" y1="-28.45" x2="-18.7" y2="11.45" width="0.8128" layer="51"/>
+<text x="0" y="-22" size="1.27" layer="21" ratio="12" align="center">RFIO-EC522</text>
+<pad name="P1" x="8.89" y="28.25" drill="1.02" diameter="1.632" shape="square"/>
+<pad name="P2" x="6.35" y="28.25" drill="1.02" diameter="1.632"/>
+<pad name="P3" x="3.81" y="28.25" drill="1.02" diameter="1.632"/>
+<pad name="P4" x="1.27" y="28.25" drill="1.02" diameter="1.632"/>
+<pad name="P5" x="-1.27" y="28.25" drill="1.02" diameter="1.632"/>
+<pad name="P6" x="-3.81" y="28.25" drill="1.02" diameter="1.632"/>
+<pad name="P7" x="-6.35" y="28.25" drill="1.02" diameter="1.632"/>
+<pad name="P8" x="-8.89" y="28.25" drill="1.02" diameter="1.632"/>
+<wire x1="-17.2" y1="9.95" x2="17.2" y2="9.95" width="0.8128" layer="51"/>
+<wire x1="17.2" y1="9.95" x2="17.2" y2="-26.95" width="0.8128" layer="51"/>
+<wire x1="17.2" y1="-26.95" x2="-17.2" y2="-26.95" width="0.8128" layer="51"/>
+<wire x1="-17.2" y1="-26.95" x2="-17.2" y2="9.95" width="0.8128" layer="51"/>
+<wire x1="-15.7" y1="8.45" x2="15.7" y2="8.45" width="0.8128" layer="51"/>
+<wire x1="15.7" y1="8.45" x2="15.7" y2="-25.45" width="0.8128" layer="51"/>
+<wire x1="15.7" y1="-25.45" x2="-15.7" y2="-25.45" width="0.8128" layer="51"/>
+<wire x1="-15.7" y1="-25.45" x2="-15.7" y2="8.45" width="0.8128" layer="51"/>
+<wire x1="-19.652" y1="12.402" x2="19.652" y2="12.402" width="0.1524" layer="39"/>
+<wire x1="19.652" y1="12.402" x2="19.652" y2="-29.402" width="0.1524" layer="39"/>
+<wire x1="19.652" y1="-29.402" x2="-19.652" y2="-29.402" width="0.1524" layer="39"/>
+<wire x1="-19.652" y1="-29.402" x2="-19.652" y2="12.402" width="0.1524" layer="39"/>
+<text x="-19.05" y="-31.75" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-19.05" y="-33.02" size="1.27" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -547,6 +582,22 @@
 <pin name="RESERVED" x="35.56" y="38.1" length="short" rot="R180"/>
 <text x="22.86" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="22.86" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="RFIO-RC522">
+<wire x1="0" y1="22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
+<pin name="SDA" x="-2.54" y="20.32" length="short"/>
+<pin name="SCK" x="-2.54" y="17.78" length="short" direction="in" function="clk"/>
+<pin name="MOSI" x="-2.54" y="15.24" length="short" direction="in"/>
+<pin name="MISO" x="-2.54" y="12.7" length="short" direction="out"/>
+<pin name="IRQ" x="-2.54" y="10.16" length="short" direction="out"/>
+<pin name="GND" x="-2.54" y="7.62" length="short" direction="pwr"/>
+<pin name="RST" x="-2.54" y="5.08" length="short" direction="in" function="dot"/>
+<pin name="+3V3" x="-2.54" y="2.54" length="short" direction="pwr"/>
+<text x="0" y="-2.54" size="1.27" layer="95" font="vector" ratio="12">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.27" layer="96" font="vector" ratio="12">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -728,6 +779,28 @@
 <connect gate="U" pin="VDD_325" pad="P4"/>
 <connect gate="U" pin="VDD_5" pad="P20"/>
 <connect gate="U" pin="VO_33" pad="P17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFIO-RC522" prefix="MOD">
+<gates>
+<gate name="MOD" symbol="RFIO-RC522" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFIO-RC522">
+<connects>
+<connect gate="MOD" pin="+3V3" pad="P8"/>
+<connect gate="MOD" pin="GND" pad="P6"/>
+<connect gate="MOD" pin="IRQ" pad="P5"/>
+<connect gate="MOD" pin="MISO" pad="P4"/>
+<connect gate="MOD" pin="MOSI" pad="P3"/>
+<connect gate="MOD" pin="RST" pad="P7"/>
+<connect gate="MOD" pin="SCK" pad="P2"/>
+<connect gate="MOD" pin="SDA" pad="P1"/>
 </connects>
 <technologies>
 <technology name=""/>
